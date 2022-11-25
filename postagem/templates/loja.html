@@ -8,9 +8,9 @@
 <div class="card lojac rounded" style="width: 18rem;">
     <img class="card-img-top" src="/media/{{produto.imagem}}" alt="">
     <div class="card-body cbloja">
-      <h5 class="card-title">{{produto.nome}}</h5>
+      <h5 class="card-title">{{produto.nomeProduto}}</h5>
       <p class="card-text">{{produto.descricao}}</p>
-      <a href="{% url 'detalhes' produto.id %}" class="btn btn-primary">R$ {{produto.valor}}</a>
+      <a href="{% url 'detalhes' produto.id %}" class="btn btn-primary">R$ {{produto.valor_produto}}</a>
     </div>
   </div>
 {% endfor %}

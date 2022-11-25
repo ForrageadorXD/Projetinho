@@ -1,11 +1,11 @@
 {% extends 'base.html' %}
 
 {% block conteudo %}
-<h1 style="color: white;">{{produto.nome}}</h1>
+<h1 style="color: white;">{{produto.nomeProduto}}</h1>
 <div style="display: flex ;">
     <img style="margin-right: 20px; max-height: 400px;" src="/media/{{produto.imagem}}" alt="">
     <div class="desc">
-        <h1 style="color: white; margin-bottom: 10px;">R$ {{produto.valor}}</h1>
+        <h1 style="color: white; margin-bottom: 10px;">R$ {{produto.valor_produto}}</h1>
         <h5 style="color: white;">Sobre o jogo:</h5>
         <p style="color: white;text-align: justify;">{{produto.descricao}}</p>
         <button type="button" class="btn">COMPRAR</button>
