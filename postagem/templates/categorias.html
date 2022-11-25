@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block conteudo %}
+<h1 style="color: white;">{{categoria.id}}</h1>
+{% for categoria in categorias %}
+<h1 style="color: white;">{{categoria.id}}</h1>
+<h1 style="color: white;">{{categoria.nome}}</h1>
+{%endfor%}
+
+{% endblock conteudo %}

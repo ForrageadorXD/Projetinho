@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block conteudo %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/cssloja.css' %}"/>
+
+{% for produto in produtos %}
+  {% for categoria in produto.categoria.all %}
+    {% if categoria.nome == 'FPS' %}
+    <div class="card lojac rounded" style="width: 18rem;">
+        <img class="card-img-top" src="/media/{{ produto.imagem }}" alt="Card image cap">
+        <div class="card-body cbloja">
+          <h5 class="card-title">{{produto.nome}}</h5>
+          <p class="card-text">{{produto.descricao}}</p>
+          <a href="{% url 'detalhes' produto.id %}" class="btn btn-primary">R$ {{produto.valor}}</a>
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% endblock conteudo %}

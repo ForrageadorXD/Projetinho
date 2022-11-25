@@ -1,0 +1,18 @@
+main{
+    text-align: center;
+}
+.lojac{
+    display: inline-block;
+    margin: 8px;
+}
+.cbloja{
+    text-align: center;
+}
+.btn-primary{
+    background-color: rgba(0, 128, 0, 0.552);
+    position: relative;
+    font-size: large;
+}
+.btn-primary:hover{
+    background-color: green;
+}
